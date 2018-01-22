@@ -61,7 +61,7 @@ Other information:
                    Rank
                    Salario
 
-        Valor de Salario base: 600(?)
+        Valor de Salario base: 600(?) Yes
     
       
   
