@@ -16,10 +16,10 @@ Classes:
       - Método para listagem de stock com possibilidade de utilização de filtros;
 			
     Pessoal:
-      - Método para adicionar empregados.
+      - Método para adicionar empregados. (Done)
       - Método para listar empregados.
-      - Método para mudar informação de empregados.
-      - Método para promover dado empregado.
+      - Método para mudar informação de empregados. (WIP)
+      - Método para promover dado empregado. (Done)
       - Método para despedir dado empregado.
       - Criação de histórico de empregados.
 			
