@@ -31,6 +31,9 @@ Classes:
 			
     Recursos:
       - No idea what this is.
+      - Verificar espaço de armazém(?)
+      - Verificar vagas e posições a preencher
+      
 			
     I/O:
       - Métodos para ler e guardar informação escrita em ficheiros CSV. Possivelmente o mais generica possivel, assim utilizamos só uma para todas as classes;
