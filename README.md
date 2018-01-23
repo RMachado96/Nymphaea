@@ -9,10 +9,11 @@ To do:
 Classes:
 
     Itens:
-      - Método para adicionar um novo tipo de item.
-      - Método para adicionar stock de itm.
-      - Método para mudar o valor de item.
-      - Método para retirar dado stock de item. 
+      - Método para adicionar um novo tipo de item. (Done)
+      - Método para adicionar stock de itm. (Done)
+      - Método para mudar o valor de item. (Done)
+      - Método para retirar dado stock de item. (Done)
+      - Método para listagem; (Done)
       - Método para listagem de stock com possibilidade de utilização de filtros;
 			
     Pessoal:
@@ -35,7 +36,7 @@ Classes:
       - Métodos para ler e guardar informação escrita em ficheiros CSV. Possivelmente o mais generica possivel, assim utilizamos só uma para todas as classes;
 			
     Interfaces:
-      - FIX THE FUCKING TAB SYSTEM.
+      - FIX THE FUCKING TAB SYSTEM. (Done)
       - Interface especifica para cada class.
 
 
