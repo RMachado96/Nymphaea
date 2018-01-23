@@ -21,7 +21,7 @@ Classes:
       - Método para listar empregados.
       - Método para mudar informação de empregados. (WIP)
       - Método para promover dado empregado. (Done)
-      - Método para despedir dado empregado.
+      - Criar nova variavel para dar track se o empregado se encontra ativo (ou despedido);
       - Criação de histórico de empregados.
 			
     Contabilidade:
