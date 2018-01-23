@@ -41,6 +41,7 @@ Classes:
     Interfaces:
       - FIX THE FUCKING TAB SYSTEM. (Done)
       - Interface especifica para cada class.
+      - Criar as interfaces de cada class em ficheiros separados, tal como a frame. Criar as listas para guardar cada tipo de objecto na propria interface correspondente.
 
 
 Para o final do trabalho:
