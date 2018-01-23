@@ -25,7 +25,7 @@ Classes:
       - Criação de histórico de empregados.
 			
     Contabilidade:
-      - Implementar na class Item codigo nos Métodos de compra e de venda para fazer tracking dos gastos e lucros de cada ação;
+      - Método para guardar lucros, despesas, networth;(Done)
       - Método para listagem de gastos e lucros;
       - (Possivelmente) Estatisticas relacionadas com o método anterior.
 			
@@ -36,7 +36,8 @@ Classes:
       
 			
     I/O:
-      - Métodos para ler e guardar informação escrita em ficheiros CSV. Possivelmente o mais generica possivel, assim utilizamos só uma para todas as classes;
+      - Métodos para ler e guardar informação escrita em ficheiros CSV. Possivelmente o mais generica possivel, assim utilizamos só uma para todas as classes;(Done)
+      - Passar I/O para class format;
 			
     Interfaces:
       - FIX THE FUCKING TAB SYSTEM. (Done)
