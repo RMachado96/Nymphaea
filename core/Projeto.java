@@ -23,11 +23,15 @@ public class Projeto {
         teste.stringteste2 = "o meu nome e David e a minha idade e";
         teste.valorteste1 = 22;
         
+        
+        
+        
         try 
         {
             File ficheiro = new File("C:\\Users\\David\\Desktop\\projeto.csv");
             //fos = new FileOutputStream(ficheiro);
             
+            //Saida            
             fos = new BufferedWriter(new FileWriter(ficheiro));
             // if file doesnt exists, then create it
 	    if (!ficheiro.exists()) {ficheiro.createNewFile();}
@@ -37,22 +41,29 @@ public class Projeto {
             fos.write(",");
             fos.write(String.valueOf(teste.valorteste1));
             fos.write(",\n");
-             
-            fos.write(teste.stringteste1);
+            fos.flush();
+            /*fos.write(teste.stringteste1);
             fos.write(",");
             fos.write(teste.stringteste2);
             fos.write(",");
             fos.write(String.valueOf(teste.valorteste1));
             fos.write(",\n");
             fos.flush();
+            */
             
-            
+            String a;
+            //Entrada
             fis = new BufferedReader(new FileReader(ficheiro));
+            while((a = fis.readLine())!= null)
+            {System.out.print(a);}
+                
+            
             
         } 
         catch (IOException e) 
         {e.printStackTrace();
 
+    }
     }
     
 }
