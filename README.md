@@ -27,7 +27,7 @@ Classes:
     Contabilidade:
       - Método para guardar lucros, despesas, networth;(Done)
       - Método para listagem de gastos e lucros; (Done)
-      - (Possivelmente) Estatisticas relacionadas com o método anterior.
+      - (Possivelmente) Estatisticas relacionadas com o método anterior. (Dont think we need this tbh)
 			
     Recursos:
       - No idea what this is. (I think i got it)
