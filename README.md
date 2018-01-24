@@ -14,7 +14,7 @@ Classes:
       - Método para mudar o valor de item. (Done)
       - Método para retirar dado stock de item. (Done)
       - Método para listagem; (Done)
-      - Método para listagem de stock com possibilidade de utilização de filtros;
+      - Método para listagem de stock com possibilidade de utilização de filtros;(Done)
 			
     Pessoal:
       - Método para adicionar empregados. (Done)
