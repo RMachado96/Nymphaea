@@ -9,10 +9,10 @@ import java.text.SimpleDateFormat;
 public class io
 {   
     // <editor-fold defaultstate="collapsed" desc="Variaveis.">
-    String defaultPath;
-    DateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
-    Date currentDate = new Date();
-    String lastSave;
+    private String defaultPath;
+    private DateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
+    private Date currentDate = new Date();
+    private String lastSave;
     // </editor-fold>
     
     // <editor-fold defaultstate="collapsed" desc="Construtor.">
