@@ -18,10 +18,10 @@ Classes:
 			
     Pessoal:
       - Método para adicionar empregados. (Done)
-      - Método para listar empregados.
-      - Método para mudar informação de empregados. (WIP)
+      - Método para listar empregados. (Done)
+      - Método para mudar informação de empregados. (Done)
       - Método para promover dado empregado. (Done)
-      - Criar nova variavel para dar track se o empregado se encontra ativo (ou despedido);
+      - Criar nova variavel para dar track se o empregado se encontra ativo (ou despedido); (Done)
       - Criação de histórico de empregados.
 			
     Contabilidade:
