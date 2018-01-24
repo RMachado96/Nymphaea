@@ -1,7 +1,6 @@
 package core;
 
-class contabilidade 
-{
+public class Contabilidade {
     // <editor-fold defaultstate="collapsed" desc="Variaveis.">
     private static int lucro = 0;
     private static int totalGasto = 0;
@@ -12,8 +11,7 @@ class contabilidade
      
     // <editor-fold defaultstate="collapsed" desc="Métodos de venda e compra.">
     //Método quando executado venda ao cliente
-    public void actionVenda(int valor, int quant)
-    {
+    public void actionVenda(int valor, int quant) {
         int valorTotal = valor * quant;
         this.lucro += valorTotal;
         this.netWorth += valorTotal;
@@ -21,8 +19,7 @@ class contabilidade
     }
     
     //Método quando executado compra ao fornecedor
-    public void actionCompra(int valor, int quant)
-    {
+    public void actionCompra(int valor, int quant) {
         int valorTotal = valor * quant;
         this.totalGasto += valorTotal;
         this.netWorth -= valorTotal;
@@ -31,28 +28,23 @@ class contabilidade
     // </editor-fold>
     
     // <editor-fold defaultstate="collapsed" desc="Gets.">
-    public int getLucro()
-    {
+    public int getLucro() {
         return this.lucro;
     }
     
-    public int getTotalGasto()
-    {
+    public int getTotalGasto() {
         return this.totalGasto;
     }
     
-    public int getNetWorth()
-    {
+    public int getNetWorth() {
         return this.netWorth;
     }
     
-    public int getStockVendido()
-    {
+    public int getStockVendido() {
         return this.stockVendido;
     }
     
-    public int getStockComprado()
-    {
+    public int getStockComprado() {
         return this.stockComprado;
     }
     // </editor-fold>
