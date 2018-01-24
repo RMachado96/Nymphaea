@@ -1,5 +1,11 @@
 # Farmacia
 
+#			FUCKING IMPORTANT
+#			   PLEASE READ
+ - Todo o código relacionado com classes está basicamente acabado. Necessário verificaçao e aceitar o meu merge request para a class Empregado.
+ - Só falta fazer a interface, e já comecei a adiantar código para vários butões (ficheiro samples.txt) escrito em Java/Pseudo.
+ - It's 4 am, so I'm going to get some fukcing sleep. BUT HEY, WE MIGHT ACTUALLY MAKE IT. Might also die of caffeine overdose, but fuck it.
+
 To do:
 
 	Organização:
