@@ -2,11 +2,13 @@ package core;
 
 public class item
 {   
+    // <editor-fold defaultstate="collapsed" desc="Variaveis.">
     private String nomeItem;
     private String descItem;
     private int valorItem;
     private int quantItem;
     static int total_stock;
+    // </editor-fold>
     
     
     // <editor-fold defaultstate="collapsed" desc="Constructores.">
@@ -110,11 +112,6 @@ public class item
     {
         System.out.println("Nome do objecto: " + this.nomeItem + " | Descrição: " 
                 + this.descItem + " | Preço: " + this.valorItem + "| Stock disponivel: " + this.quantItem);   
-    }
-    
-    
-    // </editor-fold>
-    
-    
-           
+    }  
+    // </editor-fold>           
 }
