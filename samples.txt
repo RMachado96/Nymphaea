@@ -1,0 +1,56 @@
+Botão para fazer pesquisa de item filtered:
+```
+String filter = "Ser";
+for(int i = 0; i < objList.size(); i++)
+{
+    if(objList.get(i).getNomeItem().contains(filter))
+    {
+        objList.get(i).Display();    
+    }
+}
+```
+
+
+
+Botão para gravar current state:
+```
+String info = "";
+for(int i = 0; i < listaObjectos.size(); i++)
+{
+    String line = listaObjectos.get(i).pnome + ";" + listaObjectos.get(i).unome + ";" + listaObjectos.get(i).idade + ";" + listaObjectos.get(i).rank + ";" + listaObjectos.get(i).salario + "\n";
+    info.append(line);
+}
+saveState(info);
+```
+
+
+Botão para dár load do state:
+```
+List<String> toLoad = null;
+toLoad = loadState(toLoad);
+for(int i = 0; i < toLoad.size(); i++)
+{
+    List<String> temp = toLoad.get(i).split(";");
+    objList.Add(new Obj(temp.get(0), temp.get(1), temp.get(2)));
+}
+```
+
+Aplicar ao botão de compra codigo para verificar se existe espaço no armazem (se existir espaço, remover o espaço agora utilizado:
+```
+int capMax = recursos.getCapMax();
+int ocupacaoAtual = recursos.getOcupacaoAtual();
+int nextOcupacao = quant + ocupacaoAtual;
+if(nextOcupacao > capMax)
+{
+	raise error;
+}
+else
+{
+	recursos.adiOcupacaoAtual(quant);
+}
+```
+
+Aplicar ao botão de venda codigo para modificar o espaço agora nao utilizado no armazem.
+```
+recursos.subOcupacaoAtual(quant)
+```
