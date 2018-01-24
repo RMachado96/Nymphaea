@@ -1,4 +1,4 @@
-package farmacia;
+package core;
 import java.lang.*;
 
 class testarRank extends Exception
@@ -7,40 +7,53 @@ class testarRank extends Exception
     testarRank(String msg){super(msg);}
 }
 
-class Pessoa
+public class empregado
 {
-   private String pnome, unome, posicao;
-   private int idade, rank, salario;
-       
-    Pessoa(String pnome, String unome, int idade, int rank)
+    // <editor-fold defaultstate="collapsed" desc="Variaveis.">
+    private String pnome;
+    private String unome;
+    private String posicao;
+    private String estado;
+    private int idade; 
+    private int rank; 
+    private int salario;
+    private final int salarioBase = 880;
+    // </editor-fold>
+    
+    // <editor-fold defaultstate="collapsed" desc="Construtor.">
+    public empregado(String pnome, String unome, String estado, int idade, int rank) throws testarRank
     {
         this.pnome = pnome;
         this.unome = unome;
         this.idade = idade;
-        this.rank = rank;
-        this.salario = rank *880;
-        posicao();
+        this.estado = estado;
+        if(rank<0 || rank>4){throw new testarRank();}
+        else{this.rank = rank;}
+        this.salario = rank * salarioBase;
+        this.posicao = posicao();
         
-    } 
+    }
+    // </editor-fold>
     
-    public void posicao()
+    // <editor-fold defaultstate="collapsed" desc="Setup da posicao.">
+    public String posicao()
     {
         switch(this.rank)
         {
-            case 1: this.posicao = "Farmacêutico de 1 ano";
-            break;
+            case 1: return("Farmacêutico de 1 ano");           
             
-            case 2: this.posicao = "Farmacêutico de 5 anos";
-            break;
+            case 2: return("Farmacêutico de 5 anos");
             
-            case 3: this.posicao = "Farmacêutico de 10 anos";
-            break;
+            case 3: return("Farmacêutico de 10 anos");
             
-            case 4: this.posicao = "Gerente de farmácia";
-            break;                
+            case 4: return("Gerente de farmácia");
+                            
         }
+        return null;
     }
+    // </editor-fold>
     
+    // <editor-fold defaultstate="collapsed" desc="Sets.">
     public void setPnome(String pnome)
     {
         this.pnome = pnome;
@@ -51,20 +64,24 @@ class Pessoa
         this.unome = unome;
     }
     
+    public void setEstado(String estado)
+    {
+        this.estado = estado;
+    }
+    
     public void setIdade(int idade)
     {
         this.idade = idade;
     }
     
-   
     public void setRank(int rank) //promoção
     {
         try
         {   
-            this.rank = rank;
             condRank(rank);
-            this.salario = rank * 880;
-            posicao();
+            this.rank = rank;
+            this.salario = rank * salarioBase;
+            this.posicao = posicao();
         }
         catch(testarRank tR) {System.out.println("O rank tem de ser entre 1 e 4");}
        {
@@ -76,32 +93,50 @@ class Pessoa
     {
         if(rank<0 || rank>4){throw new testarRank();}
     }
-   
-        
+    // </editor-fold>
     
-        
-    void Display()
+    // <editor-fold defaultstate="collapsed" desc="Gets.">
+    public String getPnome()
     {
-        
-        System.out.println(this.pnome +" "+ this.unome +" " + this.posicao +" " +this.idade +" "+ this.salario);
+        return this.pnome;
     }
-       
-}
-
-public class Empregado
-{
-
     
-    public static void main(String[] args)
+    public String getUnome()
     {
-       Pessoa Ricardo = new Pessoa("Ricardo","Machado",19,1);
-       Ricardo.Display();
-       Ricardo.setRank(5);
-       Ricardo.Display();
-       
-     
+        return this.unome;
     }
-   
     
+    public String getEstado()
+    {
+        return this.estado;
+    }
     
+    public String getPosicao()
+    {
+        return this.posicao;
+    }
+    
+    public int getIdade()
+    {
+        return this.idade;
+    }
+    
+    public int getRank()
+    {
+        return this.rank;
+    }
+    
+    public int getSalario()
+    {
+        return this.salario;
+    }
+   // </editor-fold>
+        
+    // <editor-fold defaultstate="collapsed" desc="Variaveis.">
+    public String Display()
+    {    
+        return(this.pnome + "|" + this.unome + "|" + this.posicao + "|" +this.idade + "|" + this.salario + "|" + this.estado);
+    }
+    // </editor-fold>
+       
 }
