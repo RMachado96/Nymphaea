@@ -1,0 +1,20 @@
+private void jButton1ActionPerformed(java.awt.event.ActionEvent evt)                                         
+    {                                             
+       int idade, rank;
+       
+       //todo o input no programa é uma string obtida a partir do metodo getText()
+       idade = Integer.parseInt(textField3.getText());
+       rank = Integer.parseInt(textField4.getText());
+       
+       try{
+       empregado teste = new empregado(textField1.getText(),textField2.getText(),textField5.getText(),idade,rank);
+       System.out.println(teste.getPnome( )+teste.getUnome() + teste.getEstado() + teste.getPosicao() + teste.getIdade() + teste.getSalario());
+       
+        //teste.Display();//nao funciona, probably devido a private access 
+       
+       }
+       catch(testarRank tR){System.out.println("Rank tem de ser entre 1 e 4");}
+       
+       
+       
+    }               
