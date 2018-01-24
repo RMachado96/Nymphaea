@@ -6,7 +6,7 @@ import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 
 
-class sysIO
+public class io
 {   
     // <editor-fold defaultstate="collapsed" desc="Variaveis.">
     String defaultPath;
