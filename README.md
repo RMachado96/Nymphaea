@@ -28,12 +28,12 @@ Classes:
       - Método para mudar informação de empregados. (Done)
       - Método para promover dado empregado. (Done)
       - Criar nova variavel para dar track se o empregado se encontra ativo (ou despedido); (Done)
-      - Criação de histórico de empregados.
+      - Criação de histórico de empregados. (Change para variável de tracking) (Done)
 			
     Contabilidade:
       - Método para guardar lucros, despesas, networth;(Done)
       - Método para listagem de gastos e lucros; (Done)
-      - (Possivelmente) Estatisticas relacionadas com o método anterior. (Dont think we need this tbh)
+      - (Possivelmente) Estatisticas relacionadas com o método anterior. (Dont think we need this tbh) (Fuck this) (Done)
 			
     Recursos:
       - No idea what this is. (I think i got it)
