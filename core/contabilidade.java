@@ -9,8 +9,7 @@ class contabilidade
     private static int stockVendido = 0;
     private static int stockComprado = 0;
     // </editor-fold>
-    
-    
+     
     // <editor-fold defaultstate="collapsed" desc="Métodos de venda e compra.">
     //Método quando executado venda ao cliente
     public void actionVenda(int valor, int quant)
@@ -28,6 +27,33 @@ class contabilidade
         this.totalGasto += valorTotal;
         this.netWorth -= valorTotal;
         this.stockComprado += quant;   
+    }
+    // </editor-fold>
+    
+    // <editor-fold defaultstate="collapsed" desc="Gets.">
+    public int getLucro()
+    {
+        return this.lucro;
+    }
+    
+    public int getTotalGasto()
+    {
+        return this.totalGasto;
+    }
+    
+    public int getNetWorth()
+    {
+        return this.netWorth;
+    }
+    
+    public int getStockVendido()
+    {
+        return this.stockVendido;
+    }
+    
+    public int getStockComprado()
+    {
+        return this.stockComprado;
     }
     // </editor-fold>
     
