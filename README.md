@@ -3,8 +3,8 @@
 To do:
 
 	Organização:
-    - Separar todas as classes por packages (da maneira mais apropriada);
-    - Criar regras de normalização de codigo para melhor organização das classes escritas por nós;
+    - Separar todas as classes por packages (da maneira mais apropriada); (Done)
+    - Criar regras de normalização de codigo para melhor organização das classes escritas por nós; (WIP)
 
 Classes:
 
@@ -30,9 +30,9 @@ Classes:
       - (Possivelmente) Estatisticas relacionadas com o método anterior.
 			
     Recursos:
-      - No idea what this is.
-      - Verificar espaço de armazém(?)
-      - Verificar vagas e posições a preencher
+      - No idea what this is. (I think i got it)
+      - Verificar espaço de armazém; (Done)
+      - Verificar espaço para armazenamento; (Done)
       
 			
     I/O:
