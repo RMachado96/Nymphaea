@@ -15,12 +15,15 @@ for(int i = 0; i < objList.size(); i++)
 Botão para gravar current state:
 ```
 String info = "";
+String ficheiroModificado = "Empregado.csv";
+int totalLines = 0;
 for(int i = 0; i < listaObjectos.size(); i++)
 {
     String line = listaObjectos.get(i).pnome + ";" + listaObjectos.get(i).unome + ";" + listaObjectos.get(i).idade + ";" + listaObjectos.get(i).rank + ";" + listaObjectos.get(i).salario + "\n";
+    totalLines += 1;
     info.append(line);
 }
-saveState(info);
+saveState(info, totalLines, ficheiroModificado);
 ```
 
 
