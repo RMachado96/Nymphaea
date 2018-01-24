@@ -10,21 +10,24 @@ public class io
 {   
     // <editor-fold defaultstate="collapsed" desc="Variaveis.">
     private String defaultPath;
+    private static String historySavePath = "";
     private DateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
     private Date currentDate = new Date();
     private String lastSave;
     // </editor-fold>
     
     // <editor-fold defaultstate="collapsed" desc="Construtor.">
-    public sysIO(String path)
+    public io(String path)
     {
         this.defaultPath = path;
+        
     }
     // </editor-fold>
     
     // <editor-fold defaultstate="collapsed" desc="Gravar sessão.">
-    public void saveState(String info)
+    public void saveState(String info, int totalLines, String ficheiroModificado)
     {
+        // <editor-fold defaultstate="collapsed" desc="Gravar ficheiro CSV com objectos.">
         BufferedWriter fos = null;
         try
         {
@@ -48,7 +51,33 @@ public class io
         catch (IOException e) 
         {
             e.printStackTrace();
-        }   
+        }  
+        // </editor-fold>
+        
+        // <editor-fold defaultstate="collapsed" desc="Gravar ficheiro CSV de histórico de gravação.">
+        BufferedWriter historicoFos = null;
+        try
+        {
+            //Abrir o ficheiro
+            File historicoOutput = new File(this.historySavePath);
+            
+            historicoFos = new BufferedWriter(new FileWriter(historicoOutput, true));
+            
+            if (!historicoOutput.exists())
+            {
+                historicoOutput.createNewFile();
+            }
+            String novaEntrada = ficheiroModificado + ";" + totalLines + ";" + this.lastSave + "\n";
+            historicoFos.write(novaEntrada);
+            historicoFos.flush();
+            historicoFos.close();               
+        }
+        catch (IOException e) 
+        {
+            e.printStackTrace();
+        }  
+        // </editor-fold>
+        
     }
     // </editor-fold>
     
