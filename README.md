@@ -44,6 +44,7 @@ Classes:
     I/O:
       - Métodos para ler e guardar informação escrita em ficheiros CSV. Possivelmente o mais generica possivel, assim utilizamos só uma para todas as classes;(Done)
       - Passar I/O para class format;(Done)
+      - I/O agora tambem irá gravar num ficheiro a parte um histórico de todas as modificações feitas. (Done)
 			
     Interfaces:
       - FIX THE FUCKING TAB SYSTEM. (Done)
