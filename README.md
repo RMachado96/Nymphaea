@@ -40,6 +40,9 @@ Classes:
       - Verificar espaço de armazém; (Done)
       - Verificar espaço para armazenamento; (Done)
       
+    Vendas:
+      - Registar venda;
+      - Alterar outras tabelas: ver Inventário/Items, ver Contabilidade;
 			
     I/O:
       - Métodos para ler e guardar informação escrita em ficheiros CSV. Possivelmente o mais generica possivel, assim utilizamos só uma para todas as classes;(Done)
