@@ -68,8 +68,7 @@ public class IO {
     // </editor-fold>
     
     // <editor-fold defaultstate="collapsed" desc="Dár load da sessão.">
-    public List<String> loadState() {
-        
+    public List<String> loadState() { 
         List<String> toLoad = new java.util.ArrayList<String>();
         BufferedReader fis = null;
         try {
@@ -77,6 +76,14 @@ public class IO {
             int b = 0;
             File ficheiroInput = new File(this.defaultPath);
             fis = new BufferedReader(new FileReader(ficheiroInput));
+            int lines = 0;
+            while (fis.readLine() != null) lines++;
+            fis.close();
+            fis = new BufferedReader(new FileReader(ficheiroInput));
+            for(int i= 0; i < lines; i++)
+            {
+                toLoad.add("");
+            }
             while (a != -1) {
                 a = fis.read();
                 if (a!=-1) {
@@ -84,7 +91,8 @@ public class IO {
                         b += 1;
                     }
                     else {
-                        toLoad.get(b).concat(String.valueOf((char)a));    
+                        String temp = String.valueOf((char)a);
+                        toLoad.add(b,toLoad.get(b).concat(temp));
                     }
                 }
             }
