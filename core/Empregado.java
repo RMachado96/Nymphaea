@@ -1,5 +1,6 @@
-package core;
+package GUI;
 import java.lang.*;
+
 
 class testarRank extends Exception {
     
@@ -17,21 +18,39 @@ public class Empregado {
     private int idade; 
     private int rank; 
     private int salario;
+    private int id;
     private final int SALARIO_BASE = 880;
     // </editor-fold>
     
     // <editor-fold defaultstate="collapsed" desc="Construtor.">
-    public Empregado(String pNome, String uNome, String estado, int idade, int rank) throws testarRank
+    public Empregado(String pNome, String uNome, String estado, int idade, int rank, int id) throws testarRank
     {
         this.pNome = pNome;
         this.uNome = uNome;
         this.idade = idade;
         this.estado = estado;
+        this.id = id;
         if (rank<0 || rank>4) {
             throw new testarRank();
         }
         else {
             this.rank = rank;
+        }
+        this.salario = rank * SALARIO_BASE;
+        this.posicao = posicao();     
+    }
+    public Empregado(String[] temp) throws testarRank
+    {
+        this.pNome = temp[0];
+        this.uNome = temp[1];
+        this.idade = Integer.parseInt(temp[3]);
+        this.estado = temp[2];
+        this.id = Integer.parseInt(temp[5]);
+        if (rank<0 || rank>4) {
+            throw new testarRank();
+        }
+        else {
+            this.rank = Integer.parseInt(temp[4]);
         }
         this.salario = rank * SALARIO_BASE;
         this.posicao = posicao();     
@@ -130,4 +149,3 @@ public class Empregado {
     // </editor-fold>
        
 }
-
