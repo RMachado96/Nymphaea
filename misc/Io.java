@@ -1,4 +1,4 @@
-package misc;
+package GUI;
 
 import java.io.*;
 import java.util.*;
@@ -6,7 +6,7 @@ import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 
 
-public class Io {   
+public class IO {   
     // <editor-fold defaultstate="collapsed" desc="Variaveis.">
     private String defaultPath;
     private static String historySavePath = "";
@@ -16,7 +16,7 @@ public class Io {
     // </editor-fold>
     
     // <editor-fold defaultstate="collapsed" desc="Construtor.">
-    public Io(String path) {
+    public IO(String path) {
         this.defaultPath = path;
         
     }
@@ -68,7 +68,9 @@ public class Io {
     // </editor-fold>
     
     // <editor-fold defaultstate="collapsed" desc="Dár load da sessão.">
-    public List<String> loadState(String info, List<String> toLoad) {
+    public List<String> loadState() {
+        
+        List<String> toLoad = new java.util.ArrayList<String>();
         BufferedReader fis = null;
         try {
             int a = 0;
