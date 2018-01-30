@@ -1,0 +1,18 @@
+**PATCH NOTES**
+
+*Overall*
+- Resize das janelas para 780x560
+- Unchecked opção Resizable nas Janelas 
+
+
+*Startup*
+- Alteração do Design
+
+
+*Gestao*
+- Alteração do Design
+
+	*Criar*
+	- Alteração do Design
+	- Novo botão "Cancelar" com action
+	
